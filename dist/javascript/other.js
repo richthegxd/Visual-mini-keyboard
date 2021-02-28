@@ -1,1 +1,1 @@
-"use strict";
+"use strict";document.addEventListener("keydown",function(e){e.preventDefault()}),document.addEventListener("contextmenu",function(e){e.preventDefault()}),document.querySelector(".reload_button").onclick=function(){location.reload()},window.addEventListener("blur",function(){fixColor()});
