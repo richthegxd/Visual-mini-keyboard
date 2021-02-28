@@ -1,0 +1,179 @@
+@import "_variables"
+
+// General styles
+body 
+    background: $body_background
+    font-family: "Gilroy"
+    font-size: 1.5vh
+    height: 100vh
+    display: flex
+    flex-flow: column
+    align-items: center
+    justify-content: center
+    color: #fff
+
+input 
+    outline: none
+
+// Focus class
+.g_color 
+    background: $green_key
+    box-shadow: $green_shadow
+
+.y_color 
+    background: $yellow_key
+    box-shadow: $yellow_shadow
+
+.b_color
+    background: $blue_key
+    box-shadow: $blue_shadow
+
+// Reload button
+.reload_button 
+    position: fixed
+    top: 2vh
+    right: 2vh
+    cursor: pointer
+
+    img
+        transition: transform .5s 
+
+        &:hover 
+            transform: rotate(230deg)
+
+
+// Line of pressed keys
+.pressed_key 
+    max-width: 60vw
+    overflow: hidden
+    padding-bottom: 1vh
+    margin-bottom: 70px
+    display: flex
+    min-height: 27px
+    transition: border .2s
+    
+    span 
+        margin: 0 .5vh
+        font-size: 1.7vh
+
+// Main keyboard
+.main
+    margin-bottom: 70px
+    &__content
+        display: flex
+        flex-flow: column
+
+        &-section
+            display: flex
+            flex-flow: row nowrap
+            margin-top: 1vh
+
+            &-key
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 0.3vh
+                height: 5vh
+                width: 5vh
+                margin-right: .6vh
+                transition: border .2s, background .05s, box-shadow .2s
+            
+            #Space 
+                width: 45vh
+            
+            #F1,
+            #F5,
+            #F9 
+                margin-left: 4.7vh
+            
+
+            #Backspace 
+                width: 13.5vh
+            
+            #Tab 
+                width: 8.5vh
+            
+            #Backslash 
+                width: 10vh
+            
+            #Enter 
+                width: 14.5vh
+                margin-right: 18.5vh
+            
+            #CapsLock 
+                width: 9.5vh
+            
+            #ShiftRight 
+                width: 17vh
+            
+            #ShiftLeft 
+                width: 12.5vh
+            
+            #AltLeft,
+            #AltRight,
+            #ContextMenu,
+            #ControlLeft,
+            #ControlRight,
+            #MetaLeft 
+                width: 6.25vh
+            
+            #Delete,
+            #Insert,
+            #PrintScreen 
+                margin-left: 1.8vh
+            
+            #ArrowLeft 
+                margin-left: 1.8vh
+            
+            #ArrowUp 
+                margin-left: 7.38vh
+            
+
+// Set color buttons
+.colors 
+    position: fixed
+    bottom: 6vh
+    display: flex
+    flex-flow: row nowrap
+    margin-top: 150px
+
+    &__button 
+        height: 4.5vh
+        width: 4.5vh 
+        background: transparent
+        color: #fff
+        cursor: pointer
+    
+    &__button-green 
+        border: 0.1vh solid #00ff80 !important
+
+        &:hover
+            background: $green_key
+            box-shadow: $green_shadow
+
+    &__button-yellow
+        border: 0.1vh solid #ffdf7f !important
+
+        &:hover
+            background: $yellow_key
+            box-shadow: $yellow_shadow
+
+    &__button-blue
+        border: 0.1vh solid #00a7d6 !important
+
+        &:hover
+            background: $blue_key
+            box-shadow: $blue_shadow
+
+// Footer
+footer 
+    position: fixed
+    bottom: 1vh
+
+    a 
+        text-decoration: none
+
+        p
+            color: #fff
+            opacity: .2
+            font-size: 1.5vh
