@@ -69,7 +69,7 @@ window.addEventListener("load",function(){
 
         if(!localStorage.getItem("colorWhenPress") || localStorage.getItem("colorWhenPress") == "null") {
             console.log("Default press color has been set")
-            localStorage.setItem("colorWhenPress", "activekey");
+            localStorage.setItem("colorWhenPress", "g_color");
         } 
 
         if(!localStorage.getItem("colorOfAllDiv")) {
