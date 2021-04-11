@@ -68,12 +68,12 @@ window.addEventListener("load",function(){
     const setColorOnStart = () => {
 
         if(!localStorage.getItem("colorWhenPress") || localStorage.getItem("colorWhenPress") == "null") {
-            console.log("Default press color has been set")
+            console.warn("Default press color has been set")
             localStorage.setItem("colorWhenPress", "g_color");
         } 
 
         if(!localStorage.getItem("colorOfAllDiv")) {
-            console.log("Default div color has been set")
+            console.warn("Default div color has been set")
             localStorage.setItem("colorOfAllDiv", "#00ff80");
         }
 
