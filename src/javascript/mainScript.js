@@ -122,6 +122,10 @@ window.addEventListener("load",function(){
  
         stringForPrint.appendChild(pressKeyBlock);
 
+        if(stringForPrint.childNodes[1].id == "delete") {
+            stringForPrint.childNodes[1].remove();
+        }
+
         if(stringForPrint.childNodes.length > 12) {
             stringForPrint.childNodes[0].remove();
         }
